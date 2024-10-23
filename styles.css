@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;
+    width: 80px;
+}
+.menuHome {
+    display: flex;
+    gap: 30px;
+    margin-right: 50px;
+
+}
+
+.menuHome li a:hover {
+    color: chocolate;
+    transition: 0.5s;
+}
+
+nav ul {
+
+    list-style-type: none;
+    padding-right: 50px;
+
+
+}
+
+nav ul li {
+    display: inline;
+    margin: 0;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+
+    text-align: center;
+    background: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+}
+
+
+aside {
+    width: 200px;
+    float: left;
+}
+
+aside nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+aside nav ul li {
+    margin: 10px 0;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+}
+
+
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 150px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    position: fixed;
+    /* Fixa o menu lateral */
+    height: 100vh;
+    /* Ocupa a altura total da janela */
+    top: 1;
+    /* Fixa ao topo */
+    left: 1;
+    /* Fixa ao lado esquerdo */
+    overflow-y: auto;
+    /* Permite rolagem se necessário */
+}
+
+.sidebar-footer {
+    display: flex;
+    font-size: 10px;
+    height: 20px;
+    color: #f3ecec;
+    position: absolute;
+    /* Faz com que o rodapé fique fixo no fundo da sidebar */
+    bottom: 120px;
+    left: 0;
+    /* Distância da esquerda */
+    right: 0;
+    /* Distância da direita */
+    background-color: #333;
+    /* Cor de fundo do rodapé */
+    align-items: center;
+    justify-content: center;
+}
+
+.content-area {
+    margin-left: 160px;
+    /* Margem à esquerda para o conteúdo */
+    padding: 20px;
+    /* Espaçamento interno do conteúdo */
+    flex: 1;
+    /* Permite que a área de conteúdo ocupe o restante do espaço */
+}
+
+
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+    /* Faz o link ocupar toda a largura */
+}
+
+.sidebar a:hover {
+    background-color: #ddd;
+    /* Efeito hover */
+}
+
+main {
+    margin-left: 220px;
+    /* Espaço para o menu lateral */
+    padding: 20px;
+    /* Espaçamento interno do conteúdo */
+    flex-grow: 1;
+    /* Permite que o main ocupe o espaço restante */
+}
+
+#userInfo {
+    margin: 0 20px;
+}
+
+#logoutBtn {
+    margin-right: 30px;
+}
