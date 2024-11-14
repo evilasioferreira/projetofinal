@@ -11,7 +11,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
+
+
+
 
 .logo {
     margin-left: 50px;
@@ -93,7 +97,7 @@ aside nav ul li a {
     width: 150px;
     background-color: #f4f4f4;
     padding: 10px;
-    position: fixed;
+    position:fixed;
     /* Fixa o menu lateral */
     height: 100vh;
     /* Ocupa a altura total da janela */
@@ -107,11 +111,10 @@ aside nav ul li a {
 
 .sidebar-footer {
     display: flex;
+    color: aliceblue;
     font-size: 10px;
     height: 20px;
-    color: #f3ecec;
-    position: absolute;
-    /* Faz com que o rodapé fique fixo no fundo da sidebar */
+    position: absolute; /* Faz com que o rodapé fique fixo no fundo da sidebar */
     bottom: 120px;
     left: 0;
     /* Distância da esquerda */
@@ -122,6 +125,7 @@ aside nav ul li a {
     align-items: center;
     justify-content: center;
 }
+
 
 .content-area {
     margin-left: 160px;
@@ -172,3 +176,32 @@ main {
 #logoutBtn {
     margin-right: 30px;
 }
+
+.item {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
+    padding: 10px;
+    border-bottom: 1px solid #ccc; 
+    margin: 5px 0; 
+    
+}
+
+.item button {
+    margin-left: 10px; 
+}
+
+.popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    gap:1px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(226, 219, 219);
+    border: 1px solid #ccc;
+    border-radius: 1.5rem;
+    padding: 20px;
+    z-index: 1000;
+}
+//////
+/* Estilo geral da tabela */
