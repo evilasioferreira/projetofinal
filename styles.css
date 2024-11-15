@@ -180,11 +180,10 @@ main {
 .item {
     display: flex; 
     justify-content: space-between; 
-    align-items: start; 
+    
     padding: 10px;
     border-bottom: 1px solid #ccc; 
-    margin: 5px 0; 
-    
+    margin: 5px 0;
 }
 
 .item button {
@@ -203,5 +202,12 @@ main {
     padding: 20px;
     z-index: 1000;
 }
-//////
+
 /* Estilo geral da tabela */
+.reader-1 {
+    padding-top: 20px;
+    color: rgb(206, 235, 44);
+    display: flex;
+    gap: 150px;
+    flex-direction: column;
+}

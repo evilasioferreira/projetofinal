@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('contentArea').innerHTML = `
             <h2>Equipamentos</h2>
             ${userRole === 'Admin' || userRole === 'Supervisor' || userRole === 'User' ? '<button onclick="openAddPopup(\'equipamento\')">Adicionar Equipamento</button>' : ''}
-            <div class="reader">
+            <div class="reader-1">
                    <table>
         <thead>
             <tr>
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('contentArea').innerHTML = `
             <h2>Usuários</h2>
             ${userRole === 'Admin' ? '<button onclick="openAddPopup(\'usuario\')">Adicionar Usuário</button>' : ''}
-            <div class="header">
+            <div class="reader-1">
      <table>
         <thead>
             <tr>
@@ -71,6 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <th>Login</th>
                 <th>Email</th>
                 <th>Perfil</th>
+                <th>Ações</th>
                 
             </tr>
         </thead>
@@ -87,9 +88,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p>${user.email}</p>
                     <p>${user.profile}</p>
                     <p>
-                        
-                        ${userRole === 'Admin' ? `<button onclick="deleteUsuario(${index})">Excluir</button>` : ''}
-                        
+                       ${userRole === 'Admin' && usuarios[index].profile !== 'Admin' ? `<button onclick="deleteUsuario(${index})">Excluir</button>` : ''}
                     </p>
                 </div>
             `;
@@ -101,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById('contentArea').innerHTML = `
             <h2>Veículos</h2>
             ${userRole === 'Admin' || userRole === 'Supervisor' || userRole === 'User' ? '<button onclick="openAddPopup(\'veiculo\')">Adicionar Veículo</button>' : ''}
-            <div class="header">
+            <div class="reader-1">
                 
                      <table>
         <thead>
@@ -110,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 <th>Modelo</th>
                 <th>Ano</th>
                 <th>Cor</th>
+                <th>Ações</th>
                 
             </tr>
         </thead>
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Funções para adicionar novos itens com popup
+
     // Função para abrir o popup de adição
 window.openAddPopup = function(type) {
     const popupContent = {
