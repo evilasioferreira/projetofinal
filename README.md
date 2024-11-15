@@ -10,9 +10,9 @@ Este projeto é um sistema interativo desenvolvido com JavaScript , HTML e CSS ,
  - Veículos : Marca, Modelo, Ano e Cor.
 
 ### 🔐 Perfis de Usuário e Permissões
- - Administrador : Adicionar, Editar, Excluir e *Imprimir recursos. (Usuários com perfis Admin não podem ser excluídos.)
- - Supervisor : Adicionar, Editar e *Imprimir recursos Adicionar.
- - Usuário : Adicionar e *Imprimir recursos.
+ - Administrador : Adicionar, Editar, Excluir e *Imprimi recursos. (Usuários com perfis 'Admin' não podem ser excluídos).
+ - Supervisor : Adicionar, Editar e *Imprimi recursos.
+ - Usuário : Adicionar e *Imprimi recursos.
 
 ### 💡 Recursos Interativos
  - Listagem de Itens : Cada menu exibe uma tabela com os itens cadastrados.
